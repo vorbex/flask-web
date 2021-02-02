@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block contend %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>recibiendo variable desde python</title>
+</head>
+<body>
+	<h1>Hola {{ nombre }}</h1>
+	<h1>{{ otro }}</h1>
+	<ul>
+	{% for t in tareas2 %}
+	<li>{{t}}</li>
+	{% endfor %}
+	</ul>
+</body>
+</html>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block contend %}
+<h1>Bienvenido</h1>
+<form action="{{ url_for('recibedeformulario') }}" method="post">
+	<input type="texto" name="nombre" placeholder="Ingrese nombre">
+	<button>Enviar</button>
+</form>
+
+{% endblock %}
